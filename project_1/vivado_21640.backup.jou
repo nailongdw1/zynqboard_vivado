@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep  7 23:51:27 2026
+# Process ID: 21640
+# Current directory: C:/Users/ASUS/Xilinx_project/design_1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23736 C:\Users\ASUS\Xilinx_project\design_1\project_1\project_1.xpr
+# Log file: C:/Users/ASUS/Xilinx_project/design_1/project_1/vivado.log
+# Journal file: C:/Users/ASUS/Xilinx_project/design_1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Xilinx_project/design_1/project_1/project_1.xpr
+open_bd_design {C:/Users/ASUS/Xilinx_project/design_1/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
