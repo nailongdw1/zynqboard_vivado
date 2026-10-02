@@ -150,6 +150,7 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         ,UART1_TX("UART1_TX")
         ,UART1_RX("UART1_RX")
         ,M_AXI_GP0_ACLK("M_AXI_GP0_ACLK")
+        ,M_AXI_GP1_ACLK("M_AXI_GP1_ACLK")
         ,S_AXI_HP0_RCOUNT("S_AXI_HP0_RCOUNT")
         ,S_AXI_HP0_WCOUNT("S_AXI_HP0_WCOUNT")
         ,S_AXI_HP0_RACOUNT("S_AXI_HP0_RACOUNT")
@@ -158,15 +159,8 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         ,S_AXI_HP0_RDISSUECAP1_EN("S_AXI_HP0_RDISSUECAP1_EN")
         ,S_AXI_HP0_WRISSUECAP1_EN("S_AXI_HP0_WRISSUECAP1_EN")
         ,IRQ_F2P("IRQ_F2P")
-        ,DMA0_DATYPE("DMA0_DATYPE")
-        ,DMA0_DAVALID("DMA0_DAVALID")
-        ,DMA0_DRREADY("DMA0_DRREADY")
-        ,DMA0_ACLK("DMA0_ACLK")
-        ,DMA0_DAREADY("DMA0_DAREADY")
-        ,DMA0_DRLAST("DMA0_DRLAST")
-        ,DMA0_DRVALID("DMA0_DRVALID")
-        ,DMA0_DRTYPE("DMA0_DRTYPE")
         ,FCLK_CLK0("FCLK_CLK0")
+        ,FCLK_RESET0_N("FCLK_RESET0_N")
         ,MIO("MIO")
         ,DDR_CAS_n("DDR_CAS_n")
         ,DDR_CKE("DDR_CKE")
@@ -190,6 +184,7 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         ,PS_PORB("PS_PORB")
     ,S_AXI_HP0_xtlm_brdg("S_AXI_HP0_xtlm_brdg")
     ,m_rp_bridge_M_AXI_GP0("m_rp_bridge_M_AXI_GP0")     
+    ,m_rp_bridge_M_AXI_GP1("m_rp_bridge_M_AXI_GP1")     
         ,FCLK_CLK0_clk("FCLK_CLK0_clk", sc_time(100000.0,sc_core::SC_PS))//clock period in picoseconds = 1000000/freq(in MZ)
     ,prop(_prop)
     {
@@ -199,6 +194,8 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         //creating instances of xtlm master sockets
         M_AXI_GP0_wr_socket = new xtlm::xtlm_aximm_initiator_socket("M_AXI_GP0_wr_socket", 32);
         M_AXI_GP0_rd_socket = new xtlm::xtlm_aximm_initiator_socket("M_AXI_GP0_rd_socket", 32);
+        M_AXI_GP1_wr_socket = new xtlm::xtlm_aximm_initiator_socket("M_AXI_GP1_wr_socket", 32);
+        M_AXI_GP1_rd_socket = new xtlm::xtlm_aximm_initiator_socket("M_AXI_GP1_rd_socket", 32);
 
 	    char* unix_path = getenv("COSIM_MACHINE_PATH");
 	    char* tcpip_addr = getenv("COSIM_MACHINE_TCPIP_ADDRESS");
@@ -242,6 +239,12 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         m_rp_bridge_M_AXI_GP0.rd_socket->bind(*M_AXI_GP0_rd_socket);
         m_rp_bridge_M_AXI_GP0.target_socket.bind(*m_zynq_tlm_model->m_axi_gp[0]);
 
+        //instantiating TLM2XTLM bridge and stiching it between 
+        //s_axi_gp[1] initiator socket of zynq Qemu tlm wrapper to M_AXI_GP1_wr_socket/rd_socket sockets 
+        m_rp_bridge_M_AXI_GP1.wr_socket->bind(*M_AXI_GP1_wr_socket);
+        m_rp_bridge_M_AXI_GP1.rd_socket->bind(*M_AXI_GP1_rd_socket);
+        m_rp_bridge_M_AXI_GP1.target_socket.bind(*m_zynq_tlm_model->m_axi_gp[1]);
+
         m_zynq_tlm_model->tie_off();
         
  
@@ -254,6 +257,7 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         dont_initialize();
         S_AXI_HP0_xtlm_brdg.registerUserExtensionHandlerCallback(&add_extensions_to_tlm);
         m_rp_bridge_M_AXI_GP0.registerUserExtensionHandlerCallback(&get_extensions_from_tlm);
+        m_rp_bridge_M_AXI_GP1.registerUserExtensionHandlerCallback(&get_extensions_from_tlm);
         m_zynq_tlm_model->rst(qemu_rst);
     }
 processing_system7_v5_5_tlm :: ~processing_system7_v5_5_tlm() {
@@ -263,6 +267,8 @@ processing_system7_v5_5_tlm :: ~processing_system7_v5_5_tlm() {
         delete S_AXI_HP0_buff;
         delete M_AXI_GP0_wr_socket;
         delete M_AXI_GP0_rd_socket;
+        delete M_AXI_GP1_wr_socket;
+        delete M_AXI_GP1_rd_socket;
     }
     
     //Method which is sentive to FCLK_CLK0_clk sc_clock object
@@ -281,8 +287,13 @@ processing_system7_v5_5_tlm :: ~processing_system7_v5_5_tlm() {
             }
         }
     }
+    //ps2pl_rst[0] output reset pin
+    void processing_system7_v5_5_tlm :: FCLK_RESET0_N_trigger()   {
+        FCLK_RESET0_N.write(m_zynq_tlm_model->ps2pl_rst[0].read());
+    }
     void processing_system7_v5_5_tlm ::start_of_simulation()
     {
     //temporary fix to drive the enabled reset pin 
+        FCLK_RESET0_N.write(true);
         qemu_rst.write(false);
     }

@@ -21,11 +21,29 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rs
 # IP: bd/design_1/ip/design_1_xlconcat_0_0/design_1_xlconcat_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlconcat_0_0 || ORIG_REF_NAME==design_1_xlconcat_0_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_xbar_1/design_1_xbar_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xbar_1 || ORIG_REF_NAME==design_1_xbar_1} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_ps7_0_axi_periph_3/design_1_ps7_0_axi_periph_3.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ps7_0_axi_periph_3 || ORIG_REF_NAME==design_1_ps7_0_axi_periph_3} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_axi_mem_intercon_6/design_1_axi_mem_intercon_6.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_mem_intercon_6 || ORIG_REF_NAME==design_1_axi_mem_intercon_6} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_dds_compiler_0_0 || ORIG_REF_NAME==design_1_dds_compiler_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_dist_mem_gen_0_0/design_1_dist_mem_gen_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_dist_mem_gen_0_0 || ORIG_REF_NAME==design_1_dist_mem_gen_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axi_fifo_mm_s_0_0 || ORIG_REF_NAME==design_1_axi_fifo_mm_s_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_dist_mem_gen_0_1/design_1_dist_mem_gen_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_dist_mem_gen_0_1 || ORIG_REF_NAME==design_1_dist_mem_gen_0_1} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_xlslice_0_0/design_1_xlslice_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_xlslice_0_0 || ORIG_REF_NAME==design_1_xlslice_0_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_0 || ORIG_REF_NAME==design_1_auto_pc_0} -quiet] -quiet
@@ -33,7 +51,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_au
 # IP: bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_1 || ORIG_REF_NAME==design_1_auto_pc_1} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_pc_2 || ORIG_REF_NAME==design_1_auto_pc_2} -quiet] -quiet
+
 # IP: bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_auto_us_0 || ORIG_REF_NAME==design_1_auto_us_0} -quiet] -quiet
 
-# XDC: c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc

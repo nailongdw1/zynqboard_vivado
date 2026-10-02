@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.runs/synth_1/design_1_wrapper.tcl"
+  variable script "C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -78,36 +78,42 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.cache/wt [current_project]
+set_property parent.project_path C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
-add_files C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_3/design_1_rst_ps7_0_10M_3_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_3/design_1_rst_ps7_0_10M_3.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_3/design_1_rst_ps7_0_10M_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
-set_property used_in_synthesis false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+read_verilog -library xil_defaultlib C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_0/design_1_axis_data_fifo_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_3/design_1_rst_ps7_0_10M_3_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_3/design_1_rst_ps7_0_10M_3.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_3/design_1_rst_ps7_0_10M_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dds_compiler_0_0/design_1_dds_compiler_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_0/design_1_dist_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_1/design_1_dist_mem_gen_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
-read_ip -quiet C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.srcs/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.gen/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0_ooc.xdc]
+read_ip -quiet C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/ip/proc_sys_reset_0/proc_sys_reset_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -118,8 +124,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc
-set_property used_in_implementation false [get_files C:/Users/ASUS/Xilinx_project/design_1_sys/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc]
+read_xdc C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc
+set_property used_in_implementation false [get_files C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

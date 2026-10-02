@@ -140,6 +140,7 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_out<bool> UART1_TX;
     sc_core::sc_in<bool> UART1_RX;
     sc_core::sc_in<bool> M_AXI_GP0_ACLK;
+    sc_core::sc_in<bool> M_AXI_GP1_ACLK;
     sc_core::sc_out<sc_dt::sc_bv<8> >  S_AXI_HP0_RCOUNT;
     sc_core::sc_out<sc_dt::sc_bv<8> >  S_AXI_HP0_WCOUNT;
     sc_core::sc_out<sc_dt::sc_bv<3> >  S_AXI_HP0_RACOUNT;
@@ -147,16 +148,9 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
     sc_core::sc_in<bool> S_AXI_HP0_ACLK;
     sc_core::sc_in<bool> S_AXI_HP0_RDISSUECAP1_EN;
     sc_core::sc_in<bool> S_AXI_HP0_WRISSUECAP1_EN;
-    sc_core::sc_in<sc_dt::sc_bv<1> >  IRQ_F2P;
-    sc_core::sc_out<sc_dt::sc_bv<2> >  DMA0_DATYPE;
-    sc_core::sc_out<bool> DMA0_DAVALID;
-    sc_core::sc_out<bool> DMA0_DRREADY;
-    sc_core::sc_in<bool> DMA0_ACLK;
-    sc_core::sc_in<bool> DMA0_DAREADY;
-    sc_core::sc_in<bool> DMA0_DRLAST;
-    sc_core::sc_in<bool> DMA0_DRVALID;
-    sc_core::sc_in<sc_dt::sc_bv<2> >  DMA0_DRTYPE;
+    sc_core::sc_in<sc_dt::sc_bv<2> >  IRQ_F2P;
     sc_core::sc_out<bool> FCLK_CLK0;
+    sc_core::sc_out<bool> FCLK_RESET0_N;
     sc_core::sc_inout<sc_dt::sc_bv<54> >  MIO;
     sc_core::sc_inout<bool> DDR_CAS_n;
     sc_core::sc_inout<bool> DDR_CKE;
@@ -181,6 +175,8 @@ class processing_system7_v5_5_tlm : public sc_core::sc_module   {
 
     xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP0_wr_socket;
     xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP0_rd_socket;
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP1_wr_socket;
+    xtlm::xtlm_aximm_initiator_socket*      M_AXI_GP1_rd_socket;
     xtlm::xtlm_aximm_target_socket*         S_AXI_HP0_wr_socket;
     xtlm::xtlm_aximm_target_socket*         S_AXI_HP0_rd_socket;
 
@@ -217,6 +213,7 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     // simple initiator socket of xilinx_zynqmp and xtlm 
     // socket with xilinx_zynq's simple target socket
     rptlm2xtlm_converter<32, 32> m_rp_bridge_M_AXI_GP0;     
+    rptlm2xtlm_converter<32, 32> m_rp_bridge_M_AXI_GP1;     
     
     // sc_clocks for generating pl clocks
     // output pins FCLK_CLK0..3 are drived by these clocks
@@ -228,6 +225,9 @@ processing_system7_v5_5_tlm(sc_core::sc_module_name name,
     void trigger_FCLK_CLK0_pin();
     
     void IRQ_F2P_method();
+    //FCLK_RESET0 output reset pin get toggle when emio bank 2's 31th signal gets toggled
+    //EMIO[2] bank 31th(GPIO[95] signal)acts as reset signal to the PL(refer Zynq UltraScale+ TRM, page no:761)
+    void FCLK_RESET0_N_trigger();
 
     sc_signal<bool> qemu_rst;
     void start_of_simulation();

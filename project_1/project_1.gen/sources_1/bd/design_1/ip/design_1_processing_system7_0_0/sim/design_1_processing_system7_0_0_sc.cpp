@@ -92,7 +92,7 @@ design_1_processing_system7_0_0_sc::design_1_processing_system7_0_0_sc(const sc_
     model_param_props.addLong("C_S_AXI_HP3_DATA_WIDTH", "64");
     model_param_props.addLong("C_M_AXI_GP0_THREAD_ID_WIDTH", "12");
     model_param_props.addLong("C_M_AXI_GP1_THREAD_ID_WIDTH", "12");
-    model_param_props.addLong("C_NUM_F2P_INTR_INPUTS", "1");
+    model_param_props.addLong("C_NUM_F2P_INTR_INPUTS", "2");
     model_param_props.addLong("C_DQ_WIDTH", "32");
     model_param_props.addLong("C_DQS_WIDTH", "4");
     model_param_props.addLong("C_DM_WIDTH", "4");
@@ -100,7 +100,7 @@ design_1_processing_system7_0_0_sc::design_1_processing_system7_0_0_sc(const sc_
     model_param_props.addLong("C_TRACE_INTERNAL_WIDTH", "2");
     model_param_props.addLong("C_USE_AXI_NONSECURE", "0");
     model_param_props.addLong("C_USE_M_AXI_GP0", "1");
-    model_param_props.addLong("C_USE_M_AXI_GP1", "0");
+    model_param_props.addLong("C_USE_M_AXI_GP1", "1");
     model_param_props.addLong("C_USE_S_AXI_GP0", "0");
     model_param_props.addLong("C_USE_S_AXI_GP1", "0");
     model_param_props.addLong("C_USE_S_AXI_HP0", "1");
@@ -121,10 +121,10 @@ design_1_processing_system7_0_0_sc::design_1_processing_system7_0_0_sc(const sc_
   mp_impl = new processing_system7_v5_5_tlm("inst", model_param_props);
 
   // initialize AXI sockets
-  DMA0_REQ_tlm_axis_socket = mp_impl->DMA0_REQ_tlm_axis_socket;
-  DMA0_ACK_tlm_axis_socket = mp_impl->DMA0_ACK_tlm_axis_socket;
   M_AXI_GP0_rd_socket = mp_impl->M_AXI_GP0_rd_socket;
   M_AXI_GP0_wr_socket = mp_impl->M_AXI_GP0_wr_socket;
+  M_AXI_GP1_rd_socket = mp_impl->M_AXI_GP1_rd_socket;
+  M_AXI_GP1_wr_socket = mp_impl->M_AXI_GP1_wr_socket;
   S_AXI_HP0_rd_socket = mp_impl->S_AXI_HP0_rd_socket;
   S_AXI_HP0_wr_socket = mp_impl->S_AXI_HP0_wr_socket;
 }
