@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Thu Oct  1 23:12:49 2026
+//Date        : Thu Oct  8 14:50:59 2026
 //Host        : LAPTOP-G7S5V53H running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -31,11 +31,8 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    S_AXIS_0_tdata,
-    S_AXIS_0_tlast,
-    S_AXIS_0_tready,
-    S_AXIS_0_tvalid,
     gpio0_tri_io,
+    s_axis_tdata_0,
     spo_0,
     spo_1,
     uart1_rxd,
@@ -61,11 +58,8 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  input [15:0]S_AXIS_0_tdata;
-  input S_AXIS_0_tlast;
-  output S_AXIS_0_tready;
-  input S_AXIS_0_tvalid;
   inout [13:0]gpio0_tri_io;
+  input [15:0]s_axis_tdata_0;
   output [7:0]spo_0;
   output [7:0]spo_1;
   input uart1_rxd;
@@ -92,10 +86,6 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [15:0]S_AXIS_0_tdata;
-  wire S_AXIS_0_tlast;
-  wire S_AXIS_0_tready;
-  wire S_AXIS_0_tvalid;
   wire [0:0]gpio0_tri_i_0;
   wire [1:1]gpio0_tri_i_1;
   wire [10:10]gpio0_tri_i_10;
@@ -152,6 +142,7 @@ module design_1_wrapper
   wire [7:7]gpio0_tri_t_7;
   wire [8:8]gpio0_tri_t_8;
   wire [9:9]gpio0_tri_t_9;
+  wire [15:0]s_axis_tdata_0;
   wire [7:0]spo_0;
   wire [7:0]spo_1;
   wire uart1_rxd;
@@ -179,13 +170,10 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .S_AXIS_0_tdata(S_AXIS_0_tdata),
-        .S_AXIS_0_tlast(S_AXIS_0_tlast),
-        .S_AXIS_0_tready(S_AXIS_0_tready),
-        .S_AXIS_0_tvalid(S_AXIS_0_tvalid),
         .gpio0_tri_i({gpio0_tri_i_13,gpio0_tri_i_12,gpio0_tri_i_11,gpio0_tri_i_10,gpio0_tri_i_9,gpio0_tri_i_8,gpio0_tri_i_7,gpio0_tri_i_6,gpio0_tri_i_5,gpio0_tri_i_4,gpio0_tri_i_3,gpio0_tri_i_2,gpio0_tri_i_1,gpio0_tri_i_0}),
         .gpio0_tri_o({gpio0_tri_o_13,gpio0_tri_o_12,gpio0_tri_o_11,gpio0_tri_o_10,gpio0_tri_o_9,gpio0_tri_o_8,gpio0_tri_o_7,gpio0_tri_o_6,gpio0_tri_o_5,gpio0_tri_o_4,gpio0_tri_o_3,gpio0_tri_o_2,gpio0_tri_o_1,gpio0_tri_o_0}),
         .gpio0_tri_t({gpio0_tri_t_13,gpio0_tri_t_12,gpio0_tri_t_11,gpio0_tri_t_10,gpio0_tri_t_9,gpio0_tri_t_8,gpio0_tri_t_7,gpio0_tri_t_6,gpio0_tri_t_5,gpio0_tri_t_4,gpio0_tri_t_3,gpio0_tri_t_2,gpio0_tri_t_1,gpio0_tri_t_0}),
+        .s_axis_tdata_0(s_axis_tdata_0),
         .spo_0(spo_0),
         .spo_1(spo_1),
         .uart1_rxd(uart1_rxd),

@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Oct  1 23:12:54 2026
-# Process ID: 30024
+# Start of session at: Thu Oct  8 14:51:05 2026
+# Process ID: 24488
 # Current directory: C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/design_1_wrapper.vds
@@ -20,79 +20,83 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 14444
+INFO: [Synth 8-7075] Helper process launched with PID 25252
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1112.875 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1115.254 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (1#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_axi_dma_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:281]
-WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:281]
-WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 43 connections declared, but only 41 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:281]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_0' (2#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:323]
-WARNING: [Synth 8-7071] port 'axi_str_txd_tlast' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:323]
-WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_0' of module 'design_1_axi_fifo_mm_s_0_0' has 25 connections declared, but only 23 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:323]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_6' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:689]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1938]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (3#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (4#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (5#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1938]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_6' (6#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:689]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (7#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dds_compiler_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_dds_compiler_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dds_compiler_0_0' (8#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_dds_compiler_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axis_phase_tvalid' of module 'design_1_dds_compiler_0_0' is unconnected for instance 'dds_compiler_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:399]
-WARNING: [Synth 8-7023] instance 'dds_compiler_0' of module 'design_1_dds_compiler_0_0' has 5 connections declared, but only 4 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:399]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dist_mem_gen_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dist_mem_gen_0_0' (9#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dist_mem_gen_0_1' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dist_mem_gen_0_1' (10#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (11#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARREADY' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RLAST' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RVALID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RRESP' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RDATA' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 152 connections declared, but only 141 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:410]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_3' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:889]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1681]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (12#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1681]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1806]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (13#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1806]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2188]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (14#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (15#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2188]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_ZQDCSB' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2493]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (16#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_ZQDCSB' (17#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2493]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (18#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_xbar_1_stub.v:6]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1640]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1640]
-WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_1' has 40 connections declared, but only 38 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1640]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_3' (19#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:889]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_10M_3' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_rst_ps7_0_10M_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_10M_3' (20#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-30024-LAPTOP-G7S5V53H/realtime/design_1_rst_ps7_0_10M_3_stub.v:6]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_10M_3' is unconnected for instance 'rst_ps7_0_10M' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:672]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_10M_3' is unconnected for instance 'rst_ps7_0_10M' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:672]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_10M_3' is unconnected for instance 'rst_ps7_0_10M' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:672]
-WARNING: [Synth 8-7023] instance 'rst_ps7_0_10M' of module 'design_1_rst_ps7_0_10M_3' has 10 connections declared, but only 7 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:672]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (1#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:274]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:274]
+WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 43 connections declared, but only 41 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:274]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_fifo_mm_s_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_fifo_mm_s_0_0' (2#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axi_fifo_mm_s_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:316]
+WARNING: [Synth 8-7071] port 'axi_str_txd_tlast' of module 'design_1_axi_fifo_mm_s_0_0' is unconnected for instance 'axi_fifo_mm_s_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:316]
+WARNING: [Synth 8-7023] instance 'axi_fifo_mm_s_0' of module 'design_1_axi_fifo_mm_s_0_0' has 25 connections declared, but only 23 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:316]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_6' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:693]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1942]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (3#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (4#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (5#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1942]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_6' (6#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:693]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (7#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_subset_converter_0_1' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axis_subset_converter_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_subset_converter_0_1' (8#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_axis_subset_converter_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 's_axis_tready' of module 'design_1_axis_subset_converter_0_1' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:392]
+WARNING: [Synth 8-7023] instance 'axis_subset_converter_0' of module 'design_1_axis_subset_converter_0_1' has 9 connections declared, but only 8 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:392]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dds_compiler_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_dds_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dds_compiler_0_0' (9#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_dds_compiler_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tvalid' of module 'design_1_dds_compiler_0_0' is unconnected for instance 'dds_compiler_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:401]
+WARNING: [Synth 8-7023] instance 'dds_compiler_0' of module 'design_1_dds_compiler_0_0' has 5 connections declared, but only 4 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:401]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dist_mem_gen_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dist_mem_gen_0_0' (10#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dist_mem_gen_0_1' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dist_mem_gen_0_1' (11#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_dist_mem_gen_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_0' (12#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARREADY' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RLAST' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RVALID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RRESP' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RDATA' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'design_1_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' has 152 connections declared, but only 141 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:412]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_3' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:893]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1685]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (13#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1685]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1810]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (14#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1810]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2192]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (15#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (16#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2192]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_ZQDCSB' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2497]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (17#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_ZQDCSB' (18#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:2497]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (19#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1644]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xbar_1' is unconnected for instance 'xbar' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1644]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_1' has 40 connections declared, but only 38 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:1644]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_3' (20#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:893]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_10M_3' [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_rst_ps7_0_10M_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_10M_3' (21#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/.Xil/Vivado-24488-LAPTOP-G7S5V53H/realtime/design_1_rst_ps7_0_10M_3_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_10M_3' is unconnected for instance 'rst_ps7_0_10M' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:674]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_10M_3' is unconnected for instance 'rst_ps7_0_10M' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:674]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_10M_3' is unconnected for instance 'rst_ps7_0_10M' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:674]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_10M' of module 'design_1_rst_ps7_0_10M_3' has 10 connections declared, but only 7 given [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:674]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -225,36 +229,42 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/AS
 	Parameter IN127_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 2 - type: integer 
 	Parameter NUM_PORTS bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (21#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (22#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (22#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (23#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (24#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (25#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
 	Parameter DIN_WIDTH bound to: 16 - type: integer 
 	Parameter DIN_FROM bound to: 15 - type: integer 
 	Parameter DIN_TO bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (23#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (24#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (25#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (26#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (27#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (28#1) [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (26#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (27#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (29#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (30#1) [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1169.688 ; gain = 56.812
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.773 ; gain = 55.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1169.688 ; gain = 56.812
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.773 ; gain = 55.520
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1169.688 ; gain = 56.812
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 1170.773 ; gain = 55.520
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1169.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1170.773 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -287,6 +297,8 @@ Parsing XDC File [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/pro
 Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0/design_1_axi_fifo_mm_s_0_0_in_context.xdc] for cell 'design_1_i/axi_fifo_mm_s_0'
 Parsing XDC File [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_1/design_1_dist_mem_gen_0_1/design_1_dist_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/dist_mem_gen_1'
 Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_dist_mem_gen_0_1/design_1_dist_mem_gen_0_1/design_1_dist_mem_gen_0_1_in_context.xdc] for cell 'design_1_i/dist_mem_gen_1'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/design_1_axis_subset_converter_0_1/design_1_axis_subset_converter_0_1_in_context.xdc] for cell 'design_1_i/axis_subset_converter_0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_axis_subset_converter_0_1/design_1_axis_subset_converter_0_1/design_1_axis_subset_converter_0_1_in_context.xdc] for cell 'design_1_i/axis_subset_converter_0'
 Parsing XDC File [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc]
 WARNING: [Vivado 12-584] No ports matched 'S_AXIS_DATA_0_tdata[7]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:45]
 WARNING: [Vivado 12-584] No ports matched 'S_AXIS_DATA_0_tdata[6]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:46]
@@ -358,6 +370,37 @@ WARNING: [Vivado 12-584] No ports matched 's_axis_data_tdata_1[2]'. [C:/Users/AS
 WARNING: [Vivado 12-584] No ports matched 's_axis_data_tdata_1[1]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:121]
 WARNING: [Vivado 12-584] No ports matched 's_axis_data_tdata_1[0]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:122]
 WARNING: [Vivado 12-584] No ports matched 's_axis_data_tvalid_1'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[15]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[14]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[13]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[12]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[11]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[10]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[9]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[8]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[7]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[6]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[5]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[4]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[3]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[2]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[1]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[0]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tlast'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tready'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tvalid'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[15]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[14]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[13]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[12]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[11]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[10]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[9]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[8]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[7]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:153]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[6]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'S_AXIS_0_tdata[5]'. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:155]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc:155]
 Finished Parsing XDC File [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.srcs/constrs_1/new/hz_7020.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -366,21 +409,21 @@ Parsing XDC File [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/pro
 Finished Parsing XDC File [C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1287.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1280.156 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 14 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1287.141 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1280.156 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -663,11 +706,13 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dist_mem_gen_0. (const
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_fifo_mm_s_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/dist_mem_gen_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_subset_converter_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -689,25 +734,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -725,100 +770,102 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------------------------+----------+
-|      |BlackBox name                   |Instances |
-+------+--------------------------------+----------+
-|1     |design_1_auto_pc_2              |         1|
-|2     |design_1_auto_us_0              |         1|
-|3     |design_1_xbar_1                 |         1|
-|4     |design_1_auto_pc_0              |         1|
-|5     |design_1_auto_pc_1              |         1|
-|6     |design_1_axi_dma_0_0            |         1|
-|7     |design_1_axi_fifo_mm_s_0_0      |         1|
-|8     |design_1_axis_data_fifo_0_0     |         1|
-|9     |design_1_dds_compiler_0_0       |         1|
-|10    |design_1_dist_mem_gen_0_0       |         1|
-|11    |design_1_dist_mem_gen_0_1       |         1|
-|12    |design_1_processing_system7_0_0 |         1|
-|13    |design_1_rst_ps7_0_10M_3        |         1|
-+------+--------------------------------+----------+
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |design_1_auto_pc_2                 |         1|
+|2     |design_1_auto_us_0                 |         1|
+|3     |design_1_xbar_1                    |         1|
+|4     |design_1_auto_pc_0                 |         1|
+|5     |design_1_auto_pc_1                 |         1|
+|6     |design_1_axi_dma_0_0               |         1|
+|7     |design_1_axi_fifo_mm_s_0_0         |         1|
+|8     |design_1_axis_data_fifo_0_0        |         1|
+|9     |design_1_axis_subset_converter_0_1 |         1|
+|10    |design_1_dds_compiler_0_0          |         1|
+|11    |design_1_dist_mem_gen_0_0          |         1|
+|12    |design_1_dist_mem_gen_0_1          |         1|
+|13    |design_1_processing_system7_0_0    |         1|
+|14    |design_1_rst_ps7_0_10M_3           |         1|
++------+-----------------------------------+----------+
 
 Report Cell Usage: 
-+------+------------------------------+------+
-|      |Cell                          |Count |
-+------+------------------------------+------+
-|1     |design_1_auto_pc              |     3|
-|4     |design_1_auto_us              |     1|
-|5     |design_1_axi_dma_0            |     1|
-|6     |design_1_axi_fifo_mm_s_0      |     1|
-|7     |design_1_axis_data_fifo_0     |     1|
-|8     |design_1_dds_compiler_0       |     1|
-|9     |design_1_dist_mem_gen_0       |     2|
-|11    |design_1_processing_system7_0 |     1|
-|12    |design_1_rst_ps7_0_10M        |     1|
-|13    |design_1_xbar                 |     1|
-|14    |IBUF                          |    19|
-|15    |IOBUF                         |    14|
-|16    |OBUF                          |    18|
-+------+------------------------------+------+
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |design_1_auto_pc                 |     3|
+|4     |design_1_auto_us                 |     1|
+|5     |design_1_axi_dma_0               |     1|
+|6     |design_1_axi_fifo_mm_s_0         |     1|
+|7     |design_1_axis_data_fifo_0        |     1|
+|8     |design_1_axis_subset_converter_0 |     1|
+|9     |design_1_dds_compiler_0          |     1|
+|10    |design_1_dist_mem_gen_0          |     2|
+|12    |design_1_processing_system7_0    |     1|
+|13    |design_1_rst_ps7_0_10M           |     1|
+|14    |design_1_xbar                    |     1|
+|15    |IBUF                             |    17|
+|16    |IOBUF                            |    14|
+|17    |OBUF                             |    17|
++------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1287.141 ; gain = 56.812
-Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 1287.141 ; gain = 174.266
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1280.156 ; gain = 55.520
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1280.156 ; gain = 164.902
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1287.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1280.156 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1295.949 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1288.547 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 14 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 14 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-74 Infos, 98 Warnings, 0 Critical Warnings and 0 Errors encountered.
+81 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1295.949 ; gain = 183.074
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1288.547 ; gain = 173.293
 INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/project_1/project_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Oct  1 23:13:17 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 14:51:27 2026...

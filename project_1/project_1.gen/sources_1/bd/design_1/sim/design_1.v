@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Thu Oct  1 23:12:48 2026
+//Date        : Thu Oct  8 14:50:59 2026
 //Host        : LAPTOP-G7S5V53H running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=22,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=28,da_board_cnt=13,da_clkrst_cnt=4,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=7,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=28,da_board_cnt=13,da_clkrst_cnt=4,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (DDR_addr,
     DDR_ba,
@@ -32,13 +32,10 @@ module design_1
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    S_AXIS_0_tdata,
-    S_AXIS_0_tlast,
-    S_AXIS_0_tready,
-    S_AXIS_0_tvalid,
     gpio0_tri_i,
     gpio0_tri_o,
     gpio0_tri_t,
+    s_axis_tdata_0,
     spo_0,
     spo_1,
     uart1_rxd,
@@ -64,22 +61,15 @@ module design_1
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK" *) inout FIXED_IO_ps_clk;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB" *) inout FIXED_IO_ps_porb;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB" *) inout FIXED_IO_ps_srstb;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS_0 TDATA" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS_0, FREQ_HZ 10000000, HAS_TKEEP 0, HAS_TLAST 1, HAS_TREADY 1, HAS_TSTRB 0, INSERT_VIP 0, LAYERED_METADATA undef, PHASE 0.000, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0" *) input [15:0]S_AXIS_0_tdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS_0 TLAST" *) input S_AXIS_0_tlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS_0 TREADY" *) output S_AXIS_0_tready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS_0 TVALID" *) input S_AXIS_0_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio0 TRI_I" *) input [13:0]gpio0_tri_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio0 TRI_O" *) output [13:0]gpio0_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 gpio0 TRI_T" *) output [13:0]gpio0_tri_t;
+  input [15:0]s_axis_tdata_0;
   output [7:0]spo_0;
   output [7:0]spo_1;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart1 RxD" *) input uart1_rxd;
   (* X_INTERFACE_INFO = "xilinx.com:interface:uart:1.0 uart1 TxD" *) output uart1_txd;
 
-  wire [15:0]S_AXIS_0_1_TDATA;
-  wire S_AXIS_0_1_TLAST;
-  wire S_AXIS_0_1_TREADY;
-  wire S_AXIS_0_1_TVALID;
   wire [31:0]axi_dma_0_M_AXI_S2MM_AWADDR;
   wire [1:0]axi_dma_0_M_AXI_S2MM_AWBURST;
   wire [3:0]axi_dma_0_M_AXI_S2MM_AWCACHE;
@@ -118,10 +108,14 @@ module design_1
   wire axi_mem_intercon_M00_AXI_WREADY;
   wire [7:0]axi_mem_intercon_M00_AXI_WSTRB;
   wire axi_mem_intercon_M00_AXI_WVALID;
-  wire [15:0]axis_data_fifo_0_M_AXIS_TDATA;
+  wire [31:0]axis_data_fifo_0_M_AXIS_TDATA;
   wire axis_data_fifo_0_M_AXIS_TLAST;
   wire axis_data_fifo_0_M_AXIS_TREADY;
   wire axis_data_fifo_0_M_AXIS_TVALID;
+  wire [31:0]axis_subset_converter_0_M_AXIS_TDATA;
+  wire axis_subset_converter_0_M_AXIS_TLAST;
+  wire axis_subset_converter_0_M_AXIS_TREADY;
+  wire axis_subset_converter_0_M_AXIS_TVALID;
   wire [15:0]dds_compiler_0_m_axis_phase_tdata;
   wire [7:0]dist_mem_gen_0_spo;
   wire [7:0]dist_mem_gen_1_spo;
@@ -264,17 +258,16 @@ module design_1
   wire ps7_0_axi_periph_M01_AXI_WVALID;
   wire [0:0]rst_ps7_0_10M_interconnect_aresetn;
   wire [0:0]rst_ps7_0_10M_peripheral_aresetn;
+  wire [15:0]s_axis_tdata_0_1;
   wire [1:0]xlconcat_0_dout;
+  wire [0:0]xlconstant_1_dout;
   wire [7:0]xlslice_0_Dout;
 
-  assign S_AXIS_0_1_TDATA = S_AXIS_0_tdata[15:0];
-  assign S_AXIS_0_1_TLAST = S_AXIS_0_tlast;
-  assign S_AXIS_0_1_TVALID = S_AXIS_0_tvalid;
-  assign S_AXIS_0_tready = S_AXIS_0_1_TREADY;
   assign gpio0_tri_o[13:0] = processing_system7_0_GPIO_0_TRI_O;
   assign gpio0_tri_t[13:0] = processing_system7_0_GPIO_0_TRI_T;
   assign processing_system7_0_GPIO_0_TRI_I = gpio0_tri_i[13:0];
   assign processing_system7_0_UART_1_RxD = uart1_rxd;
+  assign s_axis_tdata_0_1 = s_axis_tdata_0[15:0];
   assign spo_0[7:0] = dist_mem_gen_0_spo;
   assign spo_1[7:0] = dist_mem_gen_1_spo;
   assign uart1_txd = processing_system7_0_UART_1_TxD;
@@ -316,7 +309,7 @@ module design_1
         .s_axi_lite_wready(ps7_0_axi_periph_M00_AXI_WREADY),
         .s_axi_lite_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
         .s_axis_s2mm_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .s_axis_s2mm_tkeep({1'b1,1'b1}),
+        .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1,1'b1}),
         .s_axis_s2mm_tlast(axis_data_fifo_0_M_AXIS_TLAST),
         .s_axis_s2mm_tready(axis_data_fifo_0_M_AXIS_TREADY),
         .s_axis_s2mm_tvalid(axis_data_fifo_0_M_AXIS_TVALID));
@@ -392,10 +385,19 @@ module design_1
         .m_axis_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
         .s_axis_aclk(processing_system7_0_FCLK_CLK0),
         .s_axis_aresetn(rst_ps7_0_10M_peripheral_aresetn),
-        .s_axis_tdata(S_AXIS_0_1_TDATA),
-        .s_axis_tlast(S_AXIS_0_1_TLAST),
-        .s_axis_tready(S_AXIS_0_1_TREADY),
-        .s_axis_tvalid(S_AXIS_0_1_TVALID));
+        .s_axis_tdata(axis_subset_converter_0_M_AXIS_TDATA),
+        .s_axis_tlast(axis_subset_converter_0_M_AXIS_TLAST),
+        .s_axis_tready(axis_subset_converter_0_M_AXIS_TREADY),
+        .s_axis_tvalid(axis_subset_converter_0_M_AXIS_TVALID));
+  design_1_axis_subset_converter_0_1 axis_subset_converter_0
+       (.aclk(processing_system7_0_FCLK_CLK0),
+        .aresetn(rst_ps7_0_10M_peripheral_aresetn),
+        .m_axis_tdata(axis_subset_converter_0_M_AXIS_TDATA),
+        .m_axis_tlast(axis_subset_converter_0_M_AXIS_TLAST),
+        .m_axis_tready(axis_subset_converter_0_M_AXIS_TREADY),
+        .m_axis_tvalid(axis_subset_converter_0_M_AXIS_TVALID),
+        .s_axis_tdata(s_axis_tdata_0_1),
+        .s_axis_tvalid(xlconstant_1_dout));
   design_1_dds_compiler_0_0 dds_compiler_0
        (.aclk(processing_system7_0_FCLK_CLK0),
         .m_axis_phase_tdata(dds_compiler_0_m_axis_phase_tdata),
@@ -681,6 +683,8 @@ module design_1
        (.In0(axi_dma_0_s2mm_introut),
         .In1(axi_fifo_mm_s_0_interrupt),
         .dout(xlconcat_0_dout));
+  design_1_xlconstant_1_0 xlconstant_1
+       (.dout(xlconstant_1_dout));
   design_1_xlslice_0_0 xlslice_0
        (.Din(dds_compiler_0_m_axis_phase_tdata),
         .Dout(xlslice_0_Dout));
