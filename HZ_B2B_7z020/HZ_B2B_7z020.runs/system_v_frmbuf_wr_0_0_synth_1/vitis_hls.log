@@ -1,0 +1,455 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/vivado2020/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'D:/vivado2020/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Renzo' on host 'tianzhihui' (Windows NT_amd64 version 6.2) on Wed Oct 22 09:32:28 +0800 2025
+INFO: [HLS 200-10] In directory 'D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1'
+Sourcing Tcl script 'D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/runhls.tcl'
+INFO: [HLS 200-1510] Running: open_project system_v_frmbuf_wr_0_0 
+INFO: [HLS 200-10] Creating and opening project 'D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0'.
+INFO: [HLS 200-1510] Running: set_top v_frmbuf_wr 
+INFO: [HLS 200-1510] Running: open_solution prj 
+INFO: [HLS 200-10] Creating and opening solution 'D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xa7z020clg400-1i 
+INFO: [HLS 200-10] Setting target device to 'xa7z020-clg400-1I'
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr_config.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr_config.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls_video.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls_video.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls_opencv.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls_opencv.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_core.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_core.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_fast.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_fast.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_haar.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_haar.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_harris.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_harris.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_histogram.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_histogram.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_hough.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_hough.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_imgbase.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_imgbase.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_imgproc.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_imgproc.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_io.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_io.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_mem.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_mem.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_stereobm.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_stereobm.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_types.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_types.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src  d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_undistort.h 
+INFO: [HLS 200-10] Adding design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_undistort.h' to the project
+INFO: [HLS 200-1510] Running: create_clock -period 6.522 -name ap_clk 
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 6.522ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_flush_mode 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_conservative_mode 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=false 
+INFO: [HLS 200-1510] Running: config_rtl -prefix system_v_frmbuf_wr_0_0_ 
+WARNING: [HLS 200-483] The 'config_rtl -prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_prefix' as its replacement.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 545.288 MB.
+INFO: [HLS 200-10] Analyzing design file 'd:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_core.h:598:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_core.h:699:9
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:116:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:116:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:116:87
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:130:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:130:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:130:87
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:144:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:144:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:144:87
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:174:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:174:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:174:87
+WARNING: [HLS 207-5301] unused parameter 'val': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:183:44
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:183:65
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:183:75
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:183:85
+WARNING: [HLS 207-5301] unused parameter 'src': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:192:31
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:192:65
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:192:75
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:192:85
+WARNING: [HLS 207-5301] unused parameter 'val': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:201:44
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:201:85
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:215:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:215:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:215:87
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:226:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:226:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:226:87
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:237:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:237:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:237:87
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:248:78
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:248:89
+WARNING: [HLS 207-5301] unused parameter 'p0': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:261:67
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:261:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:261:87
+WARNING: [HLS 207-5301] unused parameter 'p1': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:289:77
+WARNING: [HLS 207-5301] unused parameter 'p2': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:289:87
+WARNING: [HLS 207-5301] unused parameter 'sqsum': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_arithm.h:319:54
+WARNING: [HLS 207-5301] unused parameter 'cast': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_imgproc.h:278:27
+WARNING: [HLS 207-1017] unknown pragma ignored: d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_imgproc.h:1157:9
+WARNING: [HLS 207-5301] unused parameter 'flags': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_undistort.h:163:39
+WARNING: [HLS 207-5301] unused parameter 'x': d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_undistort.h:435:24
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_video_haar.h:192:43
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:57:55
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:58:9
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:58:31
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:94:33
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:96:38
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:97:38
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:98:38
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:99:38
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:105:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:106:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:107:23
+WARNING: [HLS 207-5511] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, and it will be removed in future release. It is suggested to replace it with 'Stable Pragma'.: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:108:23
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:115:34
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:116:38
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:118:34
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:119:38
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:238:38
+WARNING: [HLS 207-5301] unused parameter 'StrideInBytes': D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:282:32
+WARNING: [HLS 207-5301] unused parameter 'dstImg2': D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:952:30
+WARNING: [HLS 207-5301] unused parameter 'VideoFormat': D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:956:28
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 4 seconds. CPU system time: 2 seconds. Elapsed time: 68.262 seconds; current allocated memory: 162.676 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::stream()' into 'STREAM_PLANES::STREAM_PLANES()' (d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src\v_frmbuf_wr.h:191:9)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:283:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:286:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:285:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:284:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::read(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' into 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_axi_sdata.h:260:80)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::ap_range_ref(ap_int_base<24, false>*, int, int)' into 'ap_int_base<24, false>::range(int, int)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:899:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::range(int, int)' into 'ap_int_base<24, false>::operator()(int, int)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:936:18)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>::get() const' into 'ap_int_base<8, false>::ap_int_base<24, false>(ap_range_ref<24, false> const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:358:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::ap_int_base<24, false>(ap_range_ref<24, false> const&)' into 'ap_uint<8>::ap_uint<24, false>(ap_range_ref<24, false> const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h:237:92)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'void hls::AXIGetBitFields<24, ap_uint<8> >(ap_uint<24>, int, int, ap_uint<8>&)' (d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:49:14)
+INFO: [HLS 214-131] Inlining function 'void hls::AXIGetBitFields<24, ap_uint<8> >(ap_uint<24>, int, int, ap_uint<8>&)' into 'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)' (d:/WORK/7020/Phosphor_7020/Phosphor_7020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls/hls_axi_io.h:71:2)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::write(hls::Scalar<3, ap_uint<8> > const&)' into 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::operator<<(hls::Scalar<3, ap_uint<8> > const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:186:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::to_int() const' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:263:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:262:17)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::operator<<(hls::Scalar<3, ap_uint<8> > const&)' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:255:17)
+INFO: [HLS 214-131] Inlining function 'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:241:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:203:17)
+INFO: [HLS 214-131] Inlining function 'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:240:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::to_int() const' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:204:24)
+INFO: [HLS 214-131] Inlining function 'void hls::AXIGetBitFields<24, ap_uint<8> >(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, int, int, ap_uint<8>&)' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:239:2)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::to_int() const' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:220:32)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::to_int() const' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:223:32)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>::operator>>(hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>&)' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:222:32)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::read(hls::Scalar<3, ap_uint<8> >&)' into 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::operator>>(hls::Scalar<3, ap_uint<8> >&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<192, false>::ap_range_ref(ap_int_base<192, false>*, int, int)' into 'ap_int_base<192, false>::range(int, int)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:899:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<192, false>::range(int, int)' into 'ap_int_base<192, false>::operator()(int, int)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:936:18)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<192, false>::ap_int_base<24, false>(ap_int_base<24, false> const&)' into 'ap_range_ref<192, false>& ap_range_ref<192, false>::operator=<24, false>(ap_int_base<24, false> const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_ref.h:413:31)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<192, false>::get() const' into 'ap_int_base<64, false>::ap_int_base<192, false>(ap_range_ref<192, false> const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:358:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, false>::ap_int_base<192, false>(ap_range_ref<192, false> const&)' into 'ap_uint<64>::ap_uint<192, false>(ap_range_ref<192, false> const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/ap_int.h:237:92)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::write(ap_uint<64> const&)' into 'hls::stream<ap_uint<64>, 0>::operator<<(ap_uint<64> const&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<8> >::Scalar()' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:288:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::operator<<(ap_uint<64> const&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:789:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<192, false>::operator()(int, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:789:71)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<192, false>& ap_range_ref<192, false>::operator=<24, false>(ap_int_base<24, false> const&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:785:57)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<192, false>::operator()(int, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:785:21)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:782:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:782:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<8, false>::arg1 operator>><8, false>(ap_int_base<8, false> const&, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:782:86)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::operator>>(hls::Scalar<3, ap_uint<8> >&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:777:64)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::operator<<(ap_uint<64> const&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:669:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<192, false>::operator()(int, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:669:71)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<192, false>& ap_range_ref<192, false>::operator=<24, false>(ap_int_base<24, false> const&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:665:57)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<192, false>::operator()(int, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:665:21)
+INFO: [HLS 214-131] Inlining function 'ap_range_ref<24, false>& ap_range_ref<24, false>::operator=<8, false>(ap_int_base<8, false> const&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:662:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<24, false>::operator()(int, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:662:29)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<8, false>::arg1 operator>><8, false>(ap_int_base<8, false> const&, int)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:662:82)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::operator>>(hls::Scalar<3, ap_uint<8> >&)' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:657:64)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::read(ap_uint<64>&)' into 'hls::stream<ap_uint<64>, 0>::operator>>(ap_uint<64>&)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<64>, 0>::operator>>(ap_uint<64>&)' into 'Bytes2AXIMMvideo(STREAM_PLANES&, ap_uint<64>*&, ap_uint<64>*&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:972:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::Scalar<3, ap_uint<8> >, 0>::stream()' into 'FrmbufWrHlsDataFlow(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, HW_STRUCT_REG&, unsigned short&, unsigned char&, unsigned short&, unsigned short&, unsigned short&, unsigned short&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:47:18)
+INFO: [HLS 214-210] Disaggregating variable 'pix'
+INFO: [HLS 214-210] Disaggregating variable 'pix'
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'v_frmbuf_wr(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<64>*, ap_uint<64>*, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:87:0)
+WARNING: [HLS 214-205] The INTERFACE pragma must have a max_widen_bitwidth setting that is both a power of 2 and in the range [0, 1024]. The current value of '0' will be ignored, in 'v_frmbuf_wr(unsigned short, unsigned short, unsigned short, unsigned short, ap_uint<64>*, ap_uint<64>*, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&)' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:87:0)
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 64 in loop 'VITIS_LOOP_969_1'(D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:969:20) has been inferred on port 'mm_video' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:969:20)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_class.hls::Scalars' into 'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, unsigned short&, unsigned short&, unsigned char&) (.1)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.0s' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i64.s_struct.ap_uint.0s' into 'MultiPixStream2Bytes(hls::stream<hls::Scalar<3, ap_uint<8> >, 0>&, STREAM_PLANES&, unsigned short&, unsigned short&, unsigned short&, unsigned short&, unsigned short&) (.1)' (D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 20.428 seconds; current allocated memory: 163.460 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 163.461 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 3.139 seconds; current allocated memory: 174.093 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] D:/vivado2020/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_ref.h:414: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.64 seconds; current allocated memory: 190.271 MB.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_652_1' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:645) in function 'MultiPixStream2Bytes' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_772_6' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:764) in function 'MultiPixStream2Bytes' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:185) in function 'AXIvideo2MultiPixStream' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_655_2' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:645) in function 'MultiPixStream2Bytes' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_660_4' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:644) in function 'MultiPixStream2Bytes' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_667_5' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:667) in function 'MultiPixStream2Bytes' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_775_7' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:764) in function 'MultiPixStream2Bytes' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_780_9' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:764) in function 'MultiPixStream2Bytes' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_787_10' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:787) in function 'MultiPixStream2Bytes' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_234_2' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:234) in function 'AXIvideo2MultiPixStream' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:288) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:186) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'map'  in dimension 1 completely.
+WARNING: [HLS 200-805] An internal stream 'img' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:47) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'FrmbufWrHlsDataFlow' (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:47:1), detected/extracted 3 process function(s): 
+	 'AXIvideo2MultiPixStream10'
+	 'MultiPixStream2Bytes'
+	 'Bytes2AXIMMvideo'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:757:47) to (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:768:9) in function 'MultiPixStream2Bytes'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:638:47) to (D:/WORK/7020/Phosphor_7020/Phosphor_7020.runs/system_v_frmbuf_wr_0_0_synth_1/system_v_frmbuf_wr_0_0/prj/.autopilot/db/v_frmbuf_wr.cpp:648:9) in function 'MultiPixStream2Bytes'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock in function 'AXIvideo2MultiPixStream10'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.966 seconds; current allocated memory: 227.228 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 2731 to 1023 for loop 'VITIS_LOOP_652_1' in function 'MultiPixStream2Bytes'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 2731 to 1023 for loop 'VITIS_LOOP_772_6' in function 'MultiPixStream2Bytes'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.672 seconds; current allocated memory: 282.173 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_frmbuf_wr' ...
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'reg<unsigned short>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<unsigned short>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.454 seconds; current allocated memory: 282.413 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 282.459 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiPixStream10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_wait_for_start'
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'loop_width'
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_wait_for_eol'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.184 seconds; current allocated memory: 282.789 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.247 seconds; current allocated memory: 283.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2Bytes' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln639) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln758) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_652_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 10, loop 'VITIS_LOOP_652_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_772_6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 8, Final II = 8, Depth = 10, loop 'VITIS_LOOP_772_6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.627 seconds; current allocated memory: 284.697 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.261 seconds; current allocated memory: 286.368 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Bytes2AXIMMvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln969) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_969_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_969_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.832 seconds; current allocated memory: 286.734 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.658 seconds; current allocated memory: 287.161 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'FrmbufWrHlsDataFlow' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 287.286 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.368 seconds; current allocated memory: 287.575 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_frmbuf_wr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.257 seconds; current allocated memory: 287.683 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.145 seconds; current allocated memory: 287.908 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.625 seconds; current allocated memory: 287.964 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiPixStream10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiPixStream10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.232 seconds; current allocated memory: 288.718 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2Bytes' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_12ns_14ns_25_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2Bytes'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.344 seconds; current allocated memory: 292.618 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Bytes2AXIMMvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_11ns_32ns_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Bytes2AXIMMvideo'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.312 seconds; current allocated memory: 298.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'FrmbufWrHlsDataFlow' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'FrmbufWrHlsDataFlow/m_axi_mm_video_RREADY' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'FrmbufWrHlsDataFlow'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.52 seconds; current allocated memory: 300.385 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_frmbuf_wr' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/mm_video' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/width' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/height' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/stride' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/video_format' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/frm_buffer' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/frm_buffer2' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_wr/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_frmbuf_wr' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'width', 'height', 'stride', 'video_format', 'frm_buffer', 'frm_buffer2' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Generating core module 'mul_11ns_3ns_14_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_frmbuf_wr'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.637 seconds; current allocated memory: 301.845 MB.
+INFO: [RTMG 210-285] Implementing FIFO 'img_U(system_v_frmbuf_wr_0_0_fifo_w24_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_c_U(system_v_frmbuf_wr_0_0_fifo_w11_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_c_U(system_v_frmbuf_wr_0_0_fifo_w3_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_frm_buffer_c_U(system_v_frmbuf_wr_0_0_fifo_w32_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'WidthInBytes_c_U(system_v_frmbuf_wr_0_0_fifo_w14_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'stride_c_U(system_v_frmbuf_wr_0_0_fifo_w16_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'video_format_c_U(system_v_frmbuf_wr_0_0_fifo_w6_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bytePlanes_plane0_U(system_v_frmbuf_wr_0_0_fifo_w64_d480_B)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'height_c9_U(system_v_frmbuf_wr_0_0_fifo_w11_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'WidthInBytes_c10_U(system_v_frmbuf_wr_0_0_fifo_w14_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2Bytes_U0_U(system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Bytes2AXIMMvideo_U0_U(system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0)' using Shift Registers.
+INFO: [RTMG 210-282] Generating pipelined core: 'system_v_frmbuf_wr_0_0_mul_11ns_3ns_14_2_1_Multiplier_0'
+INFO: [RTMG 210-279] Implementing memory 'system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'system_v_frmbuf_wr_0_0_MEMORY2LIVE_rom' using auto ROMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 6.075 seconds; current allocated memory: 308.643 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for v_frmbuf_wr with prefix system_v_frmbuf_wr_0_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_frmbuf_wr with prefix system_v_frmbuf_wr_0_0_.
+INFO: [HLS 200-1603] Design has MAXI bursts and missed bursts, see Vitis HLS GUI synthesis summary report for detailed information.
+INFO: [HLS 200-789] **** Estimated Fmax: 210.04 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 14 seconds. CPU system time: 5 seconds. Elapsed time: 114.633 seconds; current allocated memory: 309.758 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -vendor xilinx.com -library ip -version 2.2 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1083.645 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado2020/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 22 09:35:34 2025...
+INFO: [HLS 200-802] Generated output file system_v_frmbuf_wr_0_0/prj/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 77.503 seconds; current allocated memory: 314.896 MB.
+INFO: [HLS 200-112] Total CPU user time: 16 seconds. Total CPU system time: 7 seconds. Total elapsed time: 198.94 seconds; peak allocated memory: 545.288 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed Oct 22 09:35:47 2025...

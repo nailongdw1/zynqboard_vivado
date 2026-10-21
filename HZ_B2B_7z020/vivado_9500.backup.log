@@ -1,0 +1,903 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 15 17:26:06 2026
+# Process ID: 9500
+# Current directory: C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22136 C:\Users\ASUS\Xilinx_project\HZ_B2B_7z020_FPGA_251224\HZ_B2B_7z020_FPGA_251224\HZ_B2B_7z020\HZ_B2B_7z020.xpr
+# Log file: C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/vivado.log
+# Journal file: C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020'
+INFO: [Project 1-313] Project file moved from 'D:/WORK/7020/end/HZ_B2B_7z020_FPGA_251201/HZ_B2B_7z020' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/asyn_rst_syn.v', nor could it be found using path 'D:/WORK/7020/end/HZ_B2B_7z020_FPGA_251201/Phosphor_7020/ip_repo/DVI_TX/ip/src/asyn_rst_syn.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_encoder.v', nor could it be found using path 'D:/WORK/7020/end/HZ_B2B_7z020_FPGA_251201/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_encoder.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/serializer_10_to_1.v', nor could it be found using path 'D:/WORK/7020/end/HZ_B2B_7z020_FPGA_251201/Phosphor_7020/ip_repo/DVI_TX/ip/src/serializer_10_to_1.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_transmitter_top.v', nor could it be found using path 'D:/WORK/7020/end/HZ_B2B_7z020_FPGA_251201/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_transmitter_top.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/rgb2lcd/ip/src/rgb2lcd.v', nor could it be found using path 'D:/WORK/7020/end/HZ_B2B_7z020_FPGA_251201/Phosphor_7020/ip_repo/rgb2lcd/ip/src/rgb2lcd.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.ip_user_files/bd/system/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1115.719 ; gain = 0.000
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/imports/system_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/imports/system_wrapper.v
+file delete -force C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/imports/system_wrapper.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/asyn_rst_syn.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_encoder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_transmitter_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/rgb2lcd/ip/src/rgb2lcd.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/serializer_10_to_1.v] -no_script -reset -force -quiet
+remove_files  {C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/asyn_rst_syn.v C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_encoder.v C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/dvi_transmitter_top.v C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/rgb2lcd/ip/src/rgb2lcd.v C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/Phosphor_7020/ip_repo/DVI_TX/ip/src/serializer_10_to_1.v}
+make_wrapper -files [get_files C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/system.bd] -top
+add_files -norecurse c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+set_property top system_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/system.bd}
+Reading block design file <C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- alientek.com:user:ov5640_capture_data:1.0 - ov5640_capture_data_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_153M
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding component instance block -- xilinx.com:ip:v_frmbuf_wr:2.2 - v_frmbuf_wr_0
+Adding component instance block -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_dyn
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - hdmi_vtc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_hdmi_dynclk
+Adding component instance block -- xilinx.com:ip:v_frmbuf_rd:2.2 - v_frmbuf_rd_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_1
+Adding component instance block -- xilinx.com:module_ref:dvi_transmitter_top:1.0 - dvi_transmitter_top_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axis_subset_converter:1.1 - axis_subset_converter_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - lcd_id
+Adding component instance block -- digilentinc.com:IP:PWM:2.0 - lcd_pl_pwm
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - lcd_vtc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:v_frmbuf_rd:2.2 - v_frmbuf_rd_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:module_ref:rgb2lcd:1.0 - rgb2lcd_1
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - i2c2
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - rest_gpio
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Successfully read diagram <system> from block design file <C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/system.bd>
+reset_run synth_1
+launch_runs synth_1 -jobs 15
+[Thu Oct 15 17:29:28 2026] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_s00_data_fifo_0/system_s00_data_fifo_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axi_interconnect_0_1/system_axi_interconnect_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_ov5640_capture_data_0_0/system_ov5640_capture_data_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_util_vector_logic_0_0/system_util_vector_logic_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_xlslice_0_0/system_xlslice_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axi_interconnect_0_2/system_axi_interconnect_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_xlslice_0_1/system_xlslice_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_dvi_transmitter_top_0_0/system_dvi_transmitter_top_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axi_mem_intercon_0/system_axi_mem_intercon_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_lcd_pl_pwm_0/system_lcd_pl_pwm_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_xlslice_0_2/system_xlslice_0_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_rgb2lcd_1_0/system_rgb2lcd_1_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_i2c2_0/system_i2c2_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_ps7_0_axi_periph_0/system_ps7_0_axi_periph_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xml. It will be created.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_xlconcat_0_0/system_xlconcat_0_0.xml. It will be created.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xa7z020clg400-1I
+INFO: [Device 21-403] Loading part xa7z020clg400-1I
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.dcp' for cell 'system_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_i2c2_0/system_i2c2_0.dcp' for cell 'system_i/i2c2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0.dcp' for cell 'system_i/rest_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.dcp' for cell 'system_i/camera_in/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2.dcp' for cell 'system_i/camera_in/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_ov5640_capture_data_0_0/system_ov5640_capture_data_0_0.dcp' for cell 'system_i/camera_in/ov5640_capture_data_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0.dcp' for cell 'system_i/camera_in/rst_ps7_0_153M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_util_vector_logic_0_0/system_util_vector_logic_0_0.dcp' for cell 'system_i/camera_in/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.dcp' for cell 'system_i/camera_in/v_frmbuf_wr_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0.dcp' for cell 'system_i/camera_in/v_vid_in_axi4s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_data_fifo_0/system_s00_data_fifo_0.dcp' for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_data_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0.dcp' for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0.dcp' for cell 'system_i/hdmi_out/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.dcp' for cell 'system_i/hdmi_out/clk_wiz_dyn'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_dvi_transmitter_top_0_0/system_dvi_transmitter_top_0_0.dcp' for cell 'system_i/hdmi_out/dvi_transmitter_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0.dcp' for cell 'system_i/hdmi_out/hdmi_vtc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0.dcp' for cell 'system_i/hdmi_out/rst_hdmi_dynclk'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0.dcp' for cell 'system_i/hdmi_out/v_axi4s_vid_out_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.dcp' for cell 'system_i/hdmi_out/v_frmbuf_rd_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp' for cell 'system_i/hdmi_out/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1.dcp' for cell 'system_i/lcd_out/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0.dcp' for cell 'system_i/lcd_out/lcd_id'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_pl_pwm_0/system_lcd_pl_pwm_0.dcp' for cell 'system_i/lcd_out/lcd_pl_pwm'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0.dcp' for cell 'system_i/lcd_out/lcd_vtc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.dcp' for cell 'system_i/lcd_out/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rgb2lcd_1_0/system_rgb2lcd_1_0.dcp' for cell 'system_i/lcd_out/rgb2lcd_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.dcp' for cell 'system_i/lcd_out/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.dcp' for cell 'system_i/lcd_out/v_frmbuf_rd_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2.dcp' for cell 'system_i/lcd_out/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0.dcp' for cell 'system_i/ps7_0_axi_periph/m03_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1.dcp' for cell 'system_i/ps7_0_axi_periph/m05_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2.dcp' for cell 'system_i/ps7_0_axi_periph/m11_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.527 . Memory (MB): peak = 1951.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1715 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_i/clk_wiz_0/inst/CLK_CORE_DRP_I/clk_inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. system_i/hdmi_out/clk_wiz_dyn/inst/CLK_CORE_DRP_I/clk_inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_i/hdmi_out/clk_wiz_dyn/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0_board.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0_board.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0_board.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0_board.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xdc:57]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0_board.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0_board.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0_board.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0_board.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_i/clk_wiz_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_i2c2_0/system_i2c2_0_board.xdc] for cell 'system_i/i2c2/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_i2c2_0/system_i2c2_0_board.xdc] for cell 'system_i/i2c2/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 2.497500 which will be rounded to 2.498 to ensure it is an integer multiple of 1 picosecond [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc:21]
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.202470 which will be rounded to 0.202 to ensure it is an integer multiple of 1 picosecond [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc:27]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0_board.xdc] for cell 'system_i/rest_gpio/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0_board.xdc] for cell 'system_i/rest_gpio/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0.xdc] for cell 'system_i/rest_gpio/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0.xdc] for cell 'system_i/rest_gpio/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk_IBUF_BUFG'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched 'system_i/hdmi_out/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_150/Bytes2MultiPixStream_U0/or_ln759_1_reg_1441_reg[0]/C'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:105]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {system_i/hdmi_out/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_150/Bytes2MultiPixStream_U0/or_ln759_1_reg_1441_reg[0]/C}]'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:105]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'system_i/hdmi_out/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_150/Bytes2MultiPixStream_U0/icmp_ln733_reg_1425_reg[0]/C'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:106]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins {system_i/hdmi_out/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_150/Bytes2MultiPixStream_U0/icmp_ln733_reg_1425_reg[0]/C}]'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:106]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-508] No pins matched 'system_i/hdmi_out/DVI_Transmitter_0/inst/reset_syn/reset_2_reg/C'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:107]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins system_i/hdmi_out/DVI_Transmitter_0/inst/reset_syn/reset_2_reg/C]'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:107]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc]
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_clocks.xdc] for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_clocks.xdc] for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_data_fifo_0/system_s00_data_fifo_0_clocks.xdc] for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_data_fifo/inst'
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_data_fifo_0/system_s00_data_fifo_0_clocks.xdc:2]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_data_fifo_0/system_s00_data_fifo_0_clocks.xdc] for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_data_fifo/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xdc] for cell 'system_i/camera_in/v_frmbuf_wr_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xdc] for cell 'system_i/camera_in/v_frmbuf_wr_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'system_i/camera_in/v_vid_in_axi4s_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'system_i/camera_in/v_vid_in_axi4s_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0_clocks.xdc] for cell 'system_i/hdmi_out/hdmi_vtc/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0_clocks.xdc] for cell 'system_i/hdmi_out/hdmi_vtc/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.xdc] for cell 'system_i/hdmi_out/v_frmbuf_rd_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.xdc] for cell 'system_i/hdmi_out/v_frmbuf_rd_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_clocks.xdc] for cell 'system_i/hdmi_out/v_axi4s_vid_out_1/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_clocks.xdc] for cell 'system_i/hdmi_out/v_axi4s_vid_out_1/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0_clocks.xdc] for cell 'system_i/lcd_out/lcd_vtc/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0_clocks.xdc] for cell 'system_i/lcd_out/lcd_vtc/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/lcd_out/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/lcd_out/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.xdc] for cell 'system_i/lcd_out/v_frmbuf_rd_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.xdc] for cell 'system_i/lcd_out/v_frmbuf_rd_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc:17]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/m05_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc:17]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/m05_couplers/auto_cc/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/m11_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc:17]
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_clocks.xdc] for cell 'system_i/ps7_0_axi_periph/m11_couplers/auto_cc/inst'
+INFO: [Project 1-1715] 7 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 9 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2517.629 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 70 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 41 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 26 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 2640.629 ; gain = 1124.559
+open_bd_design {C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/system.bd}
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xa7z020clg400-1I
+WARNING: [Vivado_Tcl 4-391] The following IPs are missing output products for Synthesis target. These output products could be required for synthesis, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xci
+C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.xci
+C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.xci
+
+Top: system_wrapper
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2909.387 ; gain = 188.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36242]
+INFO: [Synth 8-6157] synthesizing module 'system' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:5698]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_0_0' (2#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'camera_in_imp_165SQB8' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_1_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_1_0' (3#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7197]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1IC5GLY' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:4403]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_0' (4#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_s00_data_fifo_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_s00_data_fifo_0' (5#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_s00_regslice_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_s00_regslice_0' (6#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1IC5GLY' (7#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:4403]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_1' (8#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7197]
+INFO: [Synth 8-6157] synthesizing module 'system_axis_subset_converter_0_2' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axis_subset_converter_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axis_subset_converter_0_2' (9#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axis_subset_converter_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_ov5640_capture_data_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_ov5640_capture_data_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_ov5640_capture_data_0_0' (10#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_ov5640_capture_data_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'cam_rst_n' of module 'system_ov5640_capture_data_0_0' is unconnected for instance 'ov5640_capture_data_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:490]
+WARNING: [Synth 8-7071] port 'cam_pwdn' of module 'system_ov5640_capture_data_0_0' is unconnected for instance 'ov5640_capture_data_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:490]
+WARNING: [Synth 8-7023] instance 'ov5640_capture_data_0' of module 'system_ov5640_capture_data_0_0' has 13 connections declared, but only 11 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:490]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_ps7_0_153M_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rst_ps7_0_153M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_ps7_0_153M_0' (11#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rst_ps7_0_153M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_rst_ps7_0_153M_0' is unconnected for instance 'rst_ps7_0_153M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:502]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_rst_ps7_0_153M_0' is unconnected for instance 'rst_ps7_0_153M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:502]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_ps7_0_153M_0' is unconnected for instance 'rst_ps7_0_153M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:502]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_rst_ps7_0_153M_0' is unconnected for instance 'rst_ps7_0_153M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:502]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_153M' of module 'system_rst_ps7_0_153M_0' has 10 connections declared, but only 6 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:502]
+INFO: [Synth 8-6157] synthesizing module 'system_util_vector_logic_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_util_vector_logic_0_0' (12#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_v_frmbuf_wr_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_frmbuf_wr_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_frmbuf_wr_0_0' (13#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_frmbuf_wr_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_v_vid_in_axi4s_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_vid_in_axi4s_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_vid_in_axi4s_0_0' (14#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_vid_in_axi4s_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fid' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'vtd_active_video' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'vtd_vblank' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'vtd_hblank' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'vtd_vsync' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'vtd_hsync' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'vtd_field_id' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'overflow' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7071] port 'underflow' of module 'system_v_vid_in_axi4s_0_0' is unconnected for instance 'v_vid_in_axi4s_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+WARNING: [Synth 8-7023] instance 'v_vid_in_axi4s_0' of module 'system_v_vid_in_axi4s_0_0' has 28 connections declared, but only 19 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:577]
+INFO: [Synth 8-6157] synthesizing module 'system_xlslice_0_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlslice_0_0/synth/system_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 3 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (15#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlslice_0_0' (16#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlslice_0_0/synth/system_xlslice_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'camera_in_imp_165SQB8' (17#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system_clk_wiz_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_clk_wiz_0_0' (18#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_clk_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'locked' of module 'system_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6401]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'system_clk_wiz_0_0' has 22 connections declared, but only 21 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6401]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_out_imp_1AV7IV0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:602]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_interconnect_0_2' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7567]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1UPVJVP' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:5337]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_1' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_1' (19#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1UPVJVP' (20#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:5337]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_interconnect_0_2' (21#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7567]
+INFO: [Synth 8-6157] synthesizing module 'system_axis_subset_converter_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axis_subset_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axis_subset_converter_0_0' (22#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axis_subset_converter_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'system_axis_subset_converter_0_0' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1128]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'system_axis_subset_converter_0_0' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1128]
+WARNING: [Synth 8-7071] port 'm_axis_tid' of module 'system_axis_subset_converter_0_0' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1128]
+WARNING: [Synth 8-7071] port 'm_axis_tdest' of module 'system_axis_subset_converter_0_0' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1128]
+WARNING: [Synth 8-7023] instance 'axis_subset_converter_0' of module 'system_axis_subset_converter_0_0' has 20 connections declared, but only 16 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1128]
+INFO: [Synth 8-6157] synthesizing module 'system_clk_wiz_dyn_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_clk_wiz_dyn_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'system_clk_wiz_dyn_0' (23#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_clk_wiz_dyn_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'system_dvi_transmitter_top_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_dvi_transmitter_top_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_dvi_transmitter_top_0_0' (24#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_dvi_transmitter_top_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'tmds_oen' of module 'system_dvi_transmitter_top_0_0' is unconnected for instance 'dvi_transmitter_top_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1169]
+WARNING: [Synth 8-7023] instance 'dvi_transmitter_top_0' of module 'system_dvi_transmitter_top_0_0' has 12 connections declared, but only 11 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1169]
+INFO: [Synth 8-6157] synthesizing module 'system_hdmi_vtc_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_hdmi_vtc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_hdmi_vtc_0' (25#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_hdmi_vtc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fsync_out' of module 'system_hdmi_vtc_0' is unconnected for instance 'hdmi_vtc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1181]
+WARNING: [Synth 8-7023] instance 'hdmi_vtc' of module 'system_hdmi_vtc_0' has 33 connections declared, but only 32 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1181]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_hdmi_dynclk_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rst_hdmi_dynclk_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_hdmi_dynclk_0' (26#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rst_hdmi_dynclk_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_rst_hdmi_dynclk_0' is unconnected for instance 'rst_hdmi_dynclk' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1214]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_rst_hdmi_dynclk_0' is unconnected for instance 'rst_hdmi_dynclk' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1214]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_hdmi_dynclk_0' is unconnected for instance 'rst_hdmi_dynclk' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1214]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_rst_hdmi_dynclk_0' is unconnected for instance 'rst_hdmi_dynclk' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1214]
+WARNING: [Synth 8-7023] instance 'rst_hdmi_dynclk' of module 'system_rst_hdmi_dynclk_0' has 10 connections declared, but only 6 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1214]
+INFO: [Synth 8-6157] synthesizing module 'system_v_axi4s_vid_out_1_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_axi4s_vid_out_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_axi4s_vid_out_1_0' (27#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_axi4s_vid_out_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'vid_vblank' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'vid_hblank' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'vid_field_id' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'locked' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'overflow' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'underflow' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'fifo_read_level' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'status' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7071] port 'sof_state_out' of module 'system_v_axi4s_vid_out_1_0' is unconnected for instance 'v_axi4s_vid_out_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_1' of module 'system_v_axi4s_vid_out_1_0' has 30 connections declared, but only 21 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1221]
+INFO: [Synth 8-6157] synthesizing module 'system_v_frmbuf_rd_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_frmbuf_rd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_frmbuf_rd_0_0' (28#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_frmbuf_rd_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_xlslice_0_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlslice_0_1/synth/system_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 3 - type: integer 
+	Parameter DIN_FROM bound to: 2 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (28#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlslice_0_1' (29#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlslice_0_1/synth/system_xlslice_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_out_imp_1AV7IV0' (30#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:602]
+INFO: [Synth 8-6157] synthesizing module 'system_i2c2_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_i2c2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_i2c2_0' (31#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_i2c2_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpo' of module 'system_i2c2_0' is unconnected for instance 'i2c2' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6521]
+WARNING: [Synth 8-7023] instance 'i2c2' of module 'system_i2c2_0' has 27 connections declared, but only 26 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6521]
+INFO: [Synth 8-6157] synthesizing module 'lcd_out_imp_CSOJMI' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1313]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_mem_intercon_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7937]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1NBUY74' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:4977]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_2' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_2' (32#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1NBUY74' (33#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:4977]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_mem_intercon_0' (34#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7937]
+INFO: [Synth 8-6157] synthesizing module 'system_axis_subset_converter_0_1' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axis_subset_converter_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axis_subset_converter_0_1' (35#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_axis_subset_converter_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_tstrb' of module 'system_axis_subset_converter_0_1' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1934]
+WARNING: [Synth 8-7071] port 'm_axis_tkeep' of module 'system_axis_subset_converter_0_1' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1934]
+WARNING: [Synth 8-7071] port 'm_axis_tid' of module 'system_axis_subset_converter_0_1' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1934]
+WARNING: [Synth 8-7071] port 'm_axis_tdest' of module 'system_axis_subset_converter_0_1' is unconnected for instance 'axis_subset_converter_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1934]
+WARNING: [Synth 8-7023] instance 'axis_subset_converter_0' of module 'system_axis_subset_converter_0_1' has 20 connections declared, but only 16 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1934]
+INFO: [Synth 8-6157] synthesizing module 'system_lcd_id_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_lcd_id_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_lcd_id_0' (36#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_lcd_id_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_lcd_pl_pwm_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_lcd_pl_pwm_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_lcd_pl_pwm_0' (37#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_lcd_pl_pwm_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_lcd_vtc_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_lcd_vtc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_lcd_vtc_0' (38#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_lcd_vtc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fsync_out' of module 'system_lcd_vtc_0' is unconnected for instance 'lcd_vtc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1997]
+WARNING: [Synth 8-7023] instance 'lcd_vtc' of module 'system_lcd_vtc_0' has 33 connections declared, but only 32 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1997]
+INFO: [Synth 8-6157] synthesizing module 'system_proc_sys_reset_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_proc_sys_reset_0_0' (39#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2030]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2030]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2030]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'system_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2030]
+INFO: [Synth 8-6157] synthesizing module 'system_rgb2lcd_1_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rgb2lcd_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rgb2lcd_1_0' (40#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rgb2lcd_1_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'lcd_rst' of module 'system_rgb2lcd_1_0' is unconnected for instance 'rgb2lcd_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2038]
+WARNING: [Synth 8-7071] port 'lcd_bl' of module 'system_rgb2lcd_1_0' is unconnected for instance 'rgb2lcd_1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2038]
+WARNING: [Synth 8-7023] instance 'rgb2lcd_1' of module 'system_rgb2lcd_1_0' has 17 connections declared, but only 15 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2038]
+INFO: [Synth 8-6157] synthesizing module 'system_v_axi4s_vid_out_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_axi4s_vid_out_0_0' (41#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'vid_vblank' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'vid_hblank' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'vid_field_id' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'locked' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'overflow' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'underflow' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'fifo_read_level' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'status' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7071] port 'sof_state_out' of module 'system_v_axi4s_vid_out_0_0' is unconnected for instance 'v_axi4s_vid_out_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_0' of module 'system_v_axi4s_vid_out_0_0' has 30 connections declared, but only 21 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2054]
+INFO: [Synth 8-6157] synthesizing module 'system_v_frmbuf_rd_0_1' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_frmbuf_rd_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_v_frmbuf_rd_0_1' (42#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_v_frmbuf_rd_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_xlslice_0_2' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlslice_0_2/synth/system_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 3 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (42#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlslice_0_2' (43#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlslice_0_2/synth/system_xlslice_0_2.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_out_imp_CSOJMI' (44#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:1313]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (45#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_BID' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RID' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RCOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WCOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RACOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WACOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_BID' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RID' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RCOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WCOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RACOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WACOUNT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'FCLK_CLK2' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7071] port 'FCLK_CLK3' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'system_processing_system7_0_0' has 219 connections declared, but only 197 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:6669]
+INFO: [Synth 8-6157] synthesizing module 'system_ps7_0_axi_periph_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:8307]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1H7AUOX' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2146]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1H7AUOX' (46#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2146]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_4Y7TYO' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2278]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_4Y7TYO' (47#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2278]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_FKL2TE' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2424]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_FKL2TE' (48#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2424]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_15QZ4LV' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2556]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_cc_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_cc_0' (49#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_auto_cc_0' is unconnected for instance 'auto_cc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2719]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_auto_cc_0' is unconnected for instance 'auto_cc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2719]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'system_auto_cc_0' has 42 connections declared, but only 40 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2719]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_15QZ4LV' (50#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2556]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_TUCI1Y' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2762]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_TUCI1Y' (51#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2762]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1IWS6WN' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2894]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_cc_1' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_cc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_cc_1' (52#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_cc_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_auto_cc_1' is unconnected for instance 'auto_cc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3057]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_auto_cc_1' is unconnected for instance 'auto_cc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3057]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'system_auto_cc_1' has 42 connections declared, but only 40 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3057]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1IWS6WN' (53#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:2894]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1TJ5H51' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3100]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1TJ5H51' (54#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3100]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_IE0TQS' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3232]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_IE0TQS' (55#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3232]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1KSFJCE' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3364]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1KSFJCE' (56#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3364]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_REJNZZ' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3496]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_REJNZZ' (57#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3496]
+INFO: [Synth 8-6157] synthesizing module 'm10_couplers_imp_FKDLSY' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3628]
+INFO: [Synth 8-6155] done synthesizing module 'm10_couplers_imp_FKDLSY' (58#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3628]
+INFO: [Synth 8-6157] synthesizing module 'm11_couplers_imp_15QQ90Z' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3760]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_cc_2' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_cc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_cc_2' (59#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_cc_2_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_auto_cc_2' is unconnected for instance 'auto_cc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3923]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_auto_cc_2' is unconnected for instance 'auto_cc' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3923]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'system_auto_cc_2' has 42 connections declared, but only 40 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3923]
+INFO: [Synth 8-6155] done synthesizing module 'm11_couplers_imp_15QQ90Z' (60#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3760]
+INFO: [Synth 8-6157] synthesizing module 'm12_couplers_imp_1H73OOX' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3966]
+INFO: [Synth 8-6155] done synthesizing module 'm12_couplers_imp_1H73OOX' (61#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:3966]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_11SE3QO' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:4098]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_3' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_3' (62#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_auto_pc_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_11SE3QO' (63#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:4098]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_0' (64#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (36) of port connection 'm_axi_arprot' does not match port width (39) of module 'system_xbar_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:10307]
+WARNING: [Synth 8-689] width (36) of port connection 'm_axi_awprot' does not match port width (39) of module 'system_xbar_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:10311]
+INFO: [Synth 8-6155] done synthesizing module 'system_ps7_0_axi_periph_0' (65#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:8307]
+INFO: [Synth 8-6157] synthesizing module 'system_rest_gpio_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rest_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rest_gpio_0' (66#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rest_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_ps7_0_100M_0' [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_ps7_0_100M_0' (67#1) [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/.Xil/Vivado-9500-LAPTOP-G7S5V53H/realtime/system_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7180]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7180]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7180]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7180]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'system_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:7180]
+INFO: [Synth 8-6157] synthesizing module 'system_xlconcat_0_0' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 6 - type: integer 
+	Parameter NUM_PORTS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (68#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'system_xlconcat_0_0' (69#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xlconcat_0_0/synth/system_xlconcat_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'system' (70#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/synth/system.v:5698]
+WARNING: [Synth 8-7071] port 'tmds_oen_0' of module 'system' is unconnected for instance 'system_i' [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v:450]
+WARNING: [Synth 8-7023] instance 'system_i' of module 'system' has 61 connections declared, but only 60 given [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v:450]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (71#1) [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2969.695 ; gain = 249.289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2987.457 ; gain = 267.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2987.457 ; gain = 267.051
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.dcp' for cell 'system_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_i2c2_0/system_i2c2_0.dcp' for cell 'system_i/i2c2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0.dcp' for cell 'system_i/rest_gpio'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.dcp' for cell 'system_i/camera_in/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axis_subset_converter_0_2/system_axis_subset_converter_0_2.dcp' for cell 'system_i/camera_in/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_ov5640_capture_data_0_0/system_ov5640_capture_data_0_0.dcp' for cell 'system_i/camera_in/ov5640_capture_data_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0.dcp' for cell 'system_i/camera_in/rst_ps7_0_153M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_util_vector_logic_0_0/system_util_vector_logic_0_0.dcp' for cell 'system_i/camera_in/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.dcp' for cell 'system_i/camera_in/v_frmbuf_wr_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0.dcp' for cell 'system_i/camera_in/v_vid_in_axi4s_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_data_fifo_0/system_s00_data_fifo_0.dcp' for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_data_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0.dcp' for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0.dcp' for cell 'system_i/hdmi_out/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.dcp' for cell 'system_i/hdmi_out/clk_wiz_dyn'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_dvi_transmitter_top_0_0/system_dvi_transmitter_top_0_0.dcp' for cell 'system_i/hdmi_out/dvi_transmitter_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0.dcp' for cell 'system_i/hdmi_out/hdmi_vtc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0.dcp' for cell 'system_i/hdmi_out/rst_hdmi_dynclk'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0.dcp' for cell 'system_i/hdmi_out/v_axi4s_vid_out_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.dcp' for cell 'system_i/hdmi_out/v_frmbuf_rd_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp' for cell 'system_i/hdmi_out/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axis_subset_converter_0_1/system_axis_subset_converter_0_1.dcp' for cell 'system_i/lcd_out/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0.dcp' for cell 'system_i/lcd_out/lcd_id'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_pl_pwm_0/system_lcd_pl_pwm_0.dcp' for cell 'system_i/lcd_out/lcd_pl_pwm'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0.dcp' for cell 'system_i/lcd_out/lcd_vtc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.dcp' for cell 'system_i/lcd_out/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rgb2lcd_1_0/system_rgb2lcd_1_0.dcp' for cell 'system_i/lcd_out/rgb2lcd_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.dcp' for cell 'system_i/lcd_out/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.dcp' for cell 'system_i/lcd_out/v_frmbuf_rd_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2.dcp' for cell 'system_i/lcd_out/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0.dcp' for cell 'system_i/ps7_0_axi_periph/m03_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1.dcp' for cell 'system_i/ps7_0_axi_periph/m05_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2.dcp' for cell 'system_i/ps7_0_axi_periph/m11_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.540 . Memory (MB): peak = 3010.895 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1716 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-549] Could not create 'SLEW' constraint because cell 'mdio_mdio_iobuf' is not directly connected to top level port. 'SLEW' is ignored by Vivado but preserved inside the database. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v:445]
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'DRIVE' constraint because cell 'mdio_mdio_iobuf' is not directly connected to top level port. 'DRIVE' is ignored by Vivado but preserved inside the database. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v:445]
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-549] Could not create 'IBUF_LOW_PWR' constraint because cell 'mdio_mdio_iobuf' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved inside the database. [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/hdl/system_wrapper.v:445]
+Resolution: It is recommended to apply the I/O constraint directly to the top level port instead of applying the constraint to the cell connected to the port.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'system_i/hdmi_out/clk_wiz_dyn/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/camera_in/axi_gpio_1/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0_board.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0_board.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_153M_0/system_rst_ps7_0_153M_0.xdc] for cell 'system_i/camera_in/rst_ps7_0_153M/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0_board.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0_board.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xdc] for cell 'system_i/hdmi_out/clk_wiz_dyn/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_dyn_0/system_clk_wiz_dyn_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0_board.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0_board.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_hdmi_dynclk_0/system_rst_hdmi_dynclk_0.xdc] for cell 'system_i/hdmi_out/rst_hdmi_dynclk/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0_board.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0_board.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_id_0/system_lcd_id_0.xdc] for cell 'system_i/lcd_out/lcd_id/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0_board.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xdc] for cell 'system_i/lcd_out/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0_board.xdc] for cell 'system_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc] for cell 'system_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_i2c2_0/system_i2c2_0_board.xdc] for cell 'system_i/i2c2/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_i2c2_0/system_i2c2_0_board.xdc] for cell 'system_i/i2c2/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0_board.xdc] for cell 'system_i/rest_gpio/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0_board.xdc] for cell 'system_i/rest_gpio/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0.xdc] for cell 'system_i/rest_gpio/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rest_gpio_0/system_rest_gpio_0.xdc] for cell 'system_i/rest_gpio/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc]
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk_IBUF_BUFG'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:83]
+WARNING: [Vivado 12-507] No nets matched 'cmos_pclk_IBUF'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:84]
+WARNING: [Vivado 12-508] No pins matched 'system_i/hdmi_out/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_150/Bytes2MultiPixStream_U0/or_ln759_1_reg_1441_reg[0]/C'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:105]
+WARNING: [Vivado 12-508] No pins matched 'system_i/hdmi_out/v_frmbuf_rd_0/inst/grp_FrmbufRdHlsDataFlow_fu_150/Bytes2MultiPixStream_U0/icmp_ln733_reg_1425_reg[0]/C'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:106]
+WARNING: [Vivado 12-508] No pins matched 'system_i/hdmi_out/DVI_Transmitter_0/inst/reset_syn/reset_2_reg/C'. [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc:107]
+Finished Parsing XDC File [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/system_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_clocks.xdc] for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_clocks.xdc] for cell 'system_i/camera_in/axi_interconnect_0/s00_couplers/s00_regslice/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_s00_regslice_0/system_s00_regslice_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xdc] for cell 'system_i/camera_in/v_frmbuf_wr_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xdc] for cell 'system_i/camera_in/v_frmbuf_wr_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'system_i/camera_in/v_vid_in_axi4s_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_clocks.xdc] for cell 'system_i/camera_in/v_vid_in_axi4s_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0_clocks.xdc] for cell 'system_i/hdmi_out/hdmi_vtc/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0_clocks.xdc] for cell 'system_i/hdmi_out/hdmi_vtc/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_hdmi_vtc_0/system_hdmi_vtc_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.xdc] for cell 'system_i/hdmi_out/v_frmbuf_rd_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_0/system_v_frmbuf_rd_0_0.xdc] for cell 'system_i/hdmi_out/v_frmbuf_rd_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_clocks.xdc] for cell 'system_i/hdmi_out/v_axi4s_vid_out_1/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_1_0/system_v_axi4s_vid_out_1_0_clocks.xdc] for cell 'system_i/hdmi_out/v_axi4s_vid_out_1/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0_clocks.xdc] for cell 'system_i/lcd_out/lcd_vtc/U0'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0_clocks.xdc] for cell 'system_i/lcd_out/lcd_vtc/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_lcd_vtc_0/system_lcd_vtc_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/lcd_out/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'system_i/lcd_out/v_axi4s_vid_out_0/inst'
+Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.xdc] for cell 'system_i/lcd_out/v_frmbuf_rd_0/inst'
+Finished Parsing XDC File [c:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.gen/sources_1/bd/system/ip/system_v_frmbuf_rd_0_1/system_v_frmbuf_rd_0_1.xdc] for cell 'system_i/lcd_out/v_frmbuf_rd_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 7 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3231.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 71 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 42 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 26 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 3 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 3308.309 ; gain = 587.902
+202 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 3308.309 ; gain = 587.902
+open_bd_design {C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/system.bd}
+delete_bd_objs [get_bd_nets hdmi_out_tmds_clk_p_0] [get_bd_nets hdmi_out_tmds_data_p_0] [get_bd_nets hdmi_out_tmds_oen_0] [get_bd_nets hdmi_out_tmds_clk_n_0] [get_bd_nets hdmi_out_tmds_data_n_0] [get_bd_ports user_TMDS_0_tmds_clk_p] [get_bd_ports user_TMDS_0_tmds_data_p] [get_bd_ports tmds_oen_0] [get_bd_ports user_TMDS_0_tmds_clk_n] [get_bd_ports user_TMDS_0_tmds_data_n]
+save_bd_design
+Wrote  : <C:\Users\ASUS\Xilinx_project\HZ_B2B_7z020_FPGA_251224\HZ_B2B_7z020_FPGA_251224\HZ_B2B_7z020\HZ_B2B_7z020.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
