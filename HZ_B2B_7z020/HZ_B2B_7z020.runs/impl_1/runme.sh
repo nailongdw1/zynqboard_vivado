@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_2512241/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1'
+HD_PWD='C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

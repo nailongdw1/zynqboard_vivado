@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xa7z020clg400-1I" LaunchTime="1792581363">
+<GenRun Id="synth_1" LaunchPart="xa7z020clg400-1I" LaunchTime="1795758346">
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="system_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="system_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="system_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="system_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="system_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="system_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="system_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/ip_repo/DVI_TX/ip/src/asyn_rst_syn.v">
@@ -104,8 +101,10 @@
   <BlockFileSet Type="BlockSrcs" Name="system_util_vector_logic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_dvi_transmitter_top_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_v_frmbuf_wr_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_us_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_ov5640_capture_data_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_v_vid_in_axi4s_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_us_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axis_subset_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_clk_wiz_dyn_0"/>
@@ -113,6 +112,7 @@
   <BlockFileSet Type="BlockSrcs" Name="system_hdmi_vtc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_v_axi4s_vid_out_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_4"/>
   <BlockFileSet Type="BlockSrcs" Name="system_v_frmbuf_rd_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_lcd_pl_pwm_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axis_subset_converter_1_0"/>
@@ -120,13 +120,18 @@
   <BlockFileSet Type="BlockSrcs" Name="system_lcd_vtc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_proc_sys_reset_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_v_axi4s_vid_out_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_5"/>
   <BlockFileSet Type="BlockSrcs" Name="system_v_frmbuf_rd_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_rgb2lcd_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_rest_gpio_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_dds_compiler_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_axi_fifo_mm_s_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_ds_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_dist_mem_gen_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_proc_sys_reset_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_rst_hs_100m_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_cc_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_7"/>
 </GenRun>

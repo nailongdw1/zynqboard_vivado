@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_2512241/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc rfile:../../../HZ_B2B_7z020.srcs/constrs_1/system.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/HZ_B2B_7z020/HZ_B2B_7z020.srcs/constrs_1/system.xdc rfile:../../../HZ_B2B_7z020.srcs/constrs_1/system.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN H15 IOSTANDARD LVCMOS33} [get_ports {pl_led_tri_o[0]}]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]

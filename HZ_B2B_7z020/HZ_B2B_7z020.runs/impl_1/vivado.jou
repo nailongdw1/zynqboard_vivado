@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Oct 21 19:21:43 2026
-# Process ID: 22940
-# Current directory: C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_2512241/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1
+# Start of session at: Fri Nov 27 13:55:13 2026
+# Process ID: 18960
+# Current directory: C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1
 # Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
-# Log file: C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_2512241/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1/system_wrapper.vdi
-# Journal file: C:/Users/ASUS/Xilinx_project/HZ_B2B_7z020_FPGA_2512241/HZ_B2B_7z020_FPGA_251224/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1\vivado.jou
+# Log file: C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1/system_wrapper.vdi
+# Journal file: C:/Users/ASUS/Xilinx_project/design_1_sys/zynqboard_vivado/HZ_B2B_7z020/HZ_B2B_7z020.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source system_wrapper.tcl -notrace

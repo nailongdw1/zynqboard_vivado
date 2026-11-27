@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Oct 16 11:58:16 2026
+| Date         : Fri Nov 27 13:46:16 2026
 | Host         : LAPTOP-G7S5V53H running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_axis_data_fifo_0_0_utilization_synth.rpt -pb system_axis_data_fifo_0_0_utilization_synth.pb
 | Design       : system_axis_data_fifo_0_0
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   55 |     0 |     53200 |  0.10 |
-|   LUT as Logic          |   55 |     0 |     53200 |  0.10 |
+| Slice LUTs*             |  145 |     0 |     53200 |  0.27 |
+|   LUT as Logic          |  145 |     0 |     53200 |  0.27 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         |   49 |     0 |    106400 |  0.05 |
-|   Register as Flip Flop |   49 |     0 |    106400 |  0.05 |
+| Slice Registers         |  369 |     0 |    106400 |  0.35 |
+|   Register as Flip Flop |  369 |     0 |    106400 |  0.35 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 8     |          Yes |         Set |            - |
-| 41    |          Yes |       Reset |            - |
+| 6     |          Yes |         Set |            - |
+| 363   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -67,8 +67,9 @@ Table of Contents
 +-------------------+------+-------+-----------+-------+
 |     Site Type     | Used | Fixed | Available | Util% |
 +-------------------+------+-------+-----------+-------+
-| Block RAM Tile    |  0.5 |     0 |       140 |  0.36 |
-|   RAMB36/FIFO*    |    0 |     0 |       140 |  0.00 |
+| Block RAM Tile    |  8.5 |     0 |       140 |  6.07 |
+|   RAMB36/FIFO*    |    8 |     0 |       140 |  5.71 |
+|     RAMB36E1 only |    8 |       |           |       |
 |   RAMB18          |    1 |     0 |       280 |  0.36 |
 |     RAMB18E1 only |    1 |       |           |       |
 +-------------------+------+-------+-----------+-------+
@@ -147,14 +148,16 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   41 |        Flop & Latch |
-| LUT6     |   23 |                 LUT |
-| LUT4     |   15 |                 LUT |
-| LUT5     |   11 |                 LUT |
-| FDSE     |    8 |        Flop & Latch |
-| LUT3     |    7 |                 LUT |
-| LUT2     |    4 |                 LUT |
-| LUT1     |    3 |                 LUT |
+| FDRE     |  363 |        Flop & Latch |
+| LUT2     |   70 |                 LUT |
+| CARRY4   |   32 |          CarryLogic |
+| LUT6     |   31 |                 LUT |
+| LUT3     |   30 |                 LUT |
+| LUT5     |   22 |                 LUT |
+| LUT4     |   17 |                 LUT |
+| RAMB36E1 |    8 |        Block Memory |
+| FDSE     |    6 |        Flop & Latch |
+| LUT1     |    2 |                 LUT |
 | RAMB18E1 |    1 |        Block Memory |
 +----------+------+---------------------+
 

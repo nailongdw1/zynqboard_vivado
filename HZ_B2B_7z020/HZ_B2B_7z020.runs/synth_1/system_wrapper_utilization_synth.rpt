@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Oct 21 19:16:36 2026
+| Date         : Fri Nov 27 13:48:19 2026
 | Host         : LAPTOP-G7S5V53H running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -171,6 +171,7 @@ Table of Contents
 | system_s00_data_fifo_0           |    1 |
 | system_rst_ps7_0_153M_0          |    1 |
 | system_rst_ps7_0_100M_0          |    1 |
+| system_rst_hs_100m_0             |    1 |
 | system_rst_hdmi_dynclk_0         |    1 |
 | system_rgb2lcd_1_0               |    1 |
 | system_rest_gpio_0               |    1 |
@@ -209,6 +210,7 @@ Table of Contents
 | system_auto_pc_0                 |    1 |
 | system_auto_ds_1                 |    1 |
 | system_auto_ds_0                 |    1 |
+| system_auto_cc_3                 |    1 |
 | system_auto_cc_2                 |    1 |
 | system_auto_cc_1                 |    1 |
 | system_auto_cc_0                 |    1 |
